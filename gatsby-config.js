@@ -22,17 +22,7 @@ module.exports = {
             title: `About`,
             slug: `/about`,
           },
-        ],
-        externalLinks: [
-          {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
-          },
-        ],
+        ]
       },
     },
     {
@@ -45,9 +35,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
+        name: `Like a Business`,
         short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        description: `"Running a Government Like a Business" and what that could mean`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
@@ -67,14 +57,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
-    `gatsby-plugin-netlify`,
-    shouldAnalyseBundle && {
-      resolve: `gatsby-plugin-webpack-bundle-analyser-v2`,
-      options: {
-        analyzerMode: `static`,
-        reportFilename: `_bundle.html`,
-        openAnalyzer: false,
-      },
-    },
+    `gatsby-plugin-netlify`
   ].filter(Boolean),
 }
